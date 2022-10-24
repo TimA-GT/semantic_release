@@ -1,4 +1,4 @@
-name: Release
+name: Release Dry-Run
 
 on:
   workflow_dispatch:
@@ -23,4 +23,4 @@ jobs:
       - name: Semantic Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: pnpm run release
+        run: pnpm run release --dry-run
