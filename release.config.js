@@ -23,7 +23,7 @@ module.exports = {
             "text": "A new version of $package_name with version $npm_package_version has been released at $repo_url!"
           },
           "notifyOnFail": false,
-          "slackWebhook": "https://hooks.slack.com/services/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",
+          "slackWebhook": "https://hooks.slack.com/services/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",
           "branchesConfig": [
             {
               "pattern": "main",
