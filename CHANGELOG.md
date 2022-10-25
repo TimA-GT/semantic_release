@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/TimA-GT/semantic_release/compare/v1.0.1...v1.0.2) (2022-10-25)
+
+
+### Bug Fixes
+
+* add webhook then update readme after ([4eb31ae](https://github.com/TimA-GT/semantic_release/commit/4eb31ae2d93c988bc3e5604f10ea5f5ac9e418a4))
+
 ## [1.0.1](https://github.com/TimA-GT/semantic_release/compare/v1.0.0...v1.0.1) (2022-10-24)
 
 
