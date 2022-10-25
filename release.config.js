@@ -19,13 +19,19 @@ module.exports = {
         "semantic-release-slack-bot",
         {
           "notifyOnSuccess": false,
+          "onSuccessTemplate": {
+            "text": "A new version of $package_name with version $npm_package_version has been released at $repo_url!"
+          },
           "notifyOnFail": false,
           "slackWebhook": "https://hooks.slack.com/services/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",
           "branchesConfig": [
             {
               "pattern": "main",
               "notifyOnSuccess": true,
-              "notifyOnFail": true
+              "notifyOnFail": true,
+              "onSuccessTemplate": {
+                "text": "A new version of $package_name with version $npm_package_version has been released at $repo_url!"
+              }
             }
           ]
         }
