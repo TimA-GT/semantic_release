@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/TimA-GT/semantic_release/compare/v1.0.3...v1.0.4) (2022-10-25)
+
+
+### Bug Fixes
+
+* adding onSuccessTemplate ([f1deb31](https://github.com/TimA-GT/semantic_release/commit/f1deb313206c3b2b34a4747748744f5296f8e23f))
+
 ## [1.0.3](https://github.com/TimA-GT/semantic_release/compare/v1.0.2...v1.0.3) (2022-10-25)
 
 
