@@ -15,6 +15,20 @@ module.exports = {
         { message: "chore(release): ${nextRelease.version}" },
       ],
       "@semantic-release/github",
+      [
+        "semantic-release-slack-bot",
+        {
+          "notifyOnSuccess": false,
+          "notifyOnFail": false,
+          "slackWebhook": "https://hooks.slack.com/services/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",
+          "branchesConfig": [
+            {
+              "pattern": "main",
+              "notifyOnSuccess": true,
+              "notifyOnFail": true
+            }
+          ]
+        }
+      ],
     ],
   };
-  
