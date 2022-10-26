@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/TimA-GT/semantic_release/compare/v1.1.2...v2.0.0) (2022-10-26)
+
+
+### Performance Improvements
+
+* added more explination points to readme for maximum readability ([0dd1501](https://github.com/TimA-GT/semantic_release/commit/0dd15014988ae79e176dbc898f9e9a5faaaed9d3))
+
+
+### BREAKING CHANGES
+
+* lots of explination points now, try to count them
+
 ## [1.1.2](https://github.com/TimA-GT/semantic_release/compare/v1.1.1...v1.1.2) (2022-10-26)
 
 
