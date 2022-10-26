@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/TimA-GT/semantic_release/compare/v1.1.0...v1.1.1) (2022-10-26)
+
+
+### Bug Fixes
+
+* some fix ([eb8937e](https://github.com/TimA-GT/semantic_release/commit/eb8937e21e0ac8c1947105a681443c62e34d8982))
+
 # [1.1.0](https://github.com/TimA-GT/semantic_release/compare/v1.0.4...v1.1.0) (2022-10-26)
 
 
