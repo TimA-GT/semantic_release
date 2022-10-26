@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/TimA-GT/semantic_release/compare/v1.0.4...v1.1.0) (2022-10-26)
+
+
+### Bug Fixes
+
+* test slack web hook deactivates ([901c07c](https://github.com/TimA-GT/semantic_release/commit/901c07ca94d35413b5cbe9cc340080a14283595b))
+* trigger deploy ([b994933](https://github.com/TimA-GT/semantic_release/commit/b9949338780269ddf80d0bec3d4497fd4afe9615))
+
+
+### Features
+
+* add workflows scaffolding ([ef9ebf2](https://github.com/TimA-GT/semantic_release/commit/ef9ebf21f7a4db9c9f6d52f973ae6efe9fcbf87f))
+
 ## [1.0.4](https://github.com/TimA-GT/semantic_release/compare/v1.0.3...v1.0.4) (2022-10-25)
 
 
