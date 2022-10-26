@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/TimA-GT/semantic_release/compare/v1.1.1...v1.1.2) (2022-10-26)
+
+
+### Performance Improvements
+
+* deploying to prod, this shouldn't show up but I predict it will be a feature ([ae7521c](https://github.com/TimA-GT/semantic_release/commit/ae7521cb8510bea25eb42484e6d25f6f41956bed))
+
 ## [1.1.1](https://github.com/TimA-GT/semantic_release/compare/v1.1.0...v1.1.1) (2022-10-26)
 
 
