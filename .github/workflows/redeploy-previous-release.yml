@@ -1,0 +1,32 @@
+name: Re-deploy past release
+
+# manual workflow, to be ran in the GitHub console after deleting a bad release
+# takes tag as input
+# checks out that image from artifactory
+# pushes the image to staging ecr
+# creates new staging task definition and deploys it
+# manual approve deploy to prod
+# checks out the image from artifactory
+# pushes the image to prod ecr
+# creates new prod task definition and deploys it
+
+on:
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: 'tag to deploy'
+        type: string
+        required: true
+      environment:
+        description: 'Environment to run'
+        type: environment
+        required: true
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: 'v1.0.2'
