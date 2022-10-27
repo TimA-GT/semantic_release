@@ -1,9 +1,19 @@
-# triggered on new release being published
-# checkout the latest tag
-# pull that image from artifactory
-# pushes the image to staging ecr
-# creates new staging task definition and deploys it
-# manual approve deploy to prod
-# checks out the image from artifactory
-# pushes the image to prod ecr
-# creates new prod task definition and deploys it
+name: Deploy
+
+on: 
+  release:
+    types: [published]
+
+jobs:
+  deploy_release:
+    runs-on: ubuntu-latest
+    steps:
+      - id: fetch-latest-release # this is probably overkill, we can just checkout latest
+        uses: thebritican/fetch-latest-release@v1
+        with:
+          github_token: ${{ github.token }}
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ steps.fetch-latest-release.outputs.tag_name }}
+
+# This is just a POC.  At this point we would build, push and deploy

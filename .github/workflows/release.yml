@@ -1,16 +1,7 @@
 name: Release
 
-# change this to run on pushes to main
-# manual approval after dry run?
-# create release, get version
-# build image, bake version into image as env file, tag image with version
-# push to artifactory
-
-
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   dry-run:

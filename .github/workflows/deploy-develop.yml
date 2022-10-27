@@ -1,4 +1,0 @@
-# runs tests, unit, api, lint, typing, etc
-# builds image, bakes in env is develop into the image, tags it as develop, pushes to artifactory
-# pulls develop image from artifactory, pushes it to ecr
-# creates new develop ecs task definition, deploys it
