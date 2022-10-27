@@ -1,3 +1,11 @@
+## [3.0.2](https://github.com/TimA-GT/semantic_release/compare/v3.0.1...v3.0.2) (2022-10-27)
+
+
+### Bug Fixes
+
+* change trigger type to release created ([3d84e5e](https://github.com/TimA-GT/semantic_release/commit/3d84e5eac6437110ef7b28464b76bb8aadf9e1e3))
+* typo ([98e4673](https://github.com/TimA-GT/semantic_release/commit/98e4673641828f2d87550ed9ee56b7dde7b508b6))
+
 ## [3.0.1](https://github.com/TimA-GT/semantic_release/compare/v3.0.0...v3.0.1) (2022-10-27)
 
 
