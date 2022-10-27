@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/TimA-GT/semantic_release/compare/v3.0.0...v3.0.1) (2022-10-27)
+
+
+### Bug Fixes
+
+* changing release type in deploy workflow ([73dbf6e](https://github.com/TimA-GT/semantic_release/commit/73dbf6ec79c3ddba761d45f4a7e97babf8d946d0))
+
 # [3.0.0](https://github.com/TimA-GT/semantic_release/compare/v2.0.0...v3.0.0) (2022-10-27)
 
 # [2.0.0](https://github.com/TimA-GT/semantic_release/compare/v1.1.2...v2.0.0) (2022-10-26)
