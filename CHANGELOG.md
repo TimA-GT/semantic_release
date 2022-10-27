@@ -1,3 +1,10 @@
+## [3.0.3](https://github.com/TimA-GT/semantic_release/compare/v3.0.2...v3.0.3) (2022-10-27)
+
+
+### Performance Improvements
+
+* trigger all the deploys ([688abbf](https://github.com/TimA-GT/semantic_release/commit/688abbf1757dd6f76978927930e2092cd690f205))
+
 ## [3.0.2](https://github.com/TimA-GT/semantic_release/compare/v3.0.1...v3.0.2) (2022-10-27)
 
 
