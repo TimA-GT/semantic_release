@@ -8,6 +8,8 @@ jobs:
     name: Create Release
     runs-on: ubuntu-latest
     if: $${{ github.ref_type == 'branch' && github.ref_name == 'main'}}
+    outputs:
+      git-tag: ${{ steps.release-tag.outputs.git-tag }}
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3

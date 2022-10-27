@@ -13,8 +13,10 @@ jobs:
     name: Fake job
     runs-on: ubuntu-latest
     steps:
-      - name: Install Dependencies
-        run: pnpm install
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
   
 
 # this is just a POC, not going to fully build it out.  This workflow will pull the tag from artifactory
