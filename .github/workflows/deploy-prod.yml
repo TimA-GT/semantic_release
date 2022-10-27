@@ -2,18 +2,14 @@ name: Deploy
 
 on: 
   release:
-    types: [published]
+    types: [released]
 
 jobs:
   deploy_release:
     runs-on: ubuntu-latest
     steps:
-      - id: fetch-latest-release # this is probably overkill, we can just checkout latest
-        uses: thebritican/fetch-latest-release@v1
-        with:
-          github_token: ${{ github.token }}
       - uses: actions/checkout@v3
         with:
-          ref: ${{ steps.fetch-latest-release.outputs.tag_name }}
+          ref: ${{ GITHUB_REF }}
 
 # This is just a POC.  At this point we would build, push and deploy
