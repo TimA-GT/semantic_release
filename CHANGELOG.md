@@ -1,3 +1,10 @@
+## [3.0.4](https://github.com/TimA-GT/semantic_release/compare/v3.0.3...v3.0.4) (2022-10-27)
+
+
+### Bug Fixes
+
+* added GENERATED_TOKEN secret ([ea98434](https://github.com/TimA-GT/semantic_release/commit/ea98434a9d34b4ad2b2dd08490e1d47583fe6db7))
+
 ## [3.0.3](https://github.com/TimA-GT/semantic_release/compare/v3.0.2...v3.0.3) (2022-10-27)
 
 
