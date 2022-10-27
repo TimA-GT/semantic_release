@@ -1,0 +1,23 @@
+name: Deploy to Staging and Prod
+
+on:
+  workflow_call:
+    inputs:
+      git-tag:
+        type: string
+        required: true
+        description: "git tag to pull, ex: v1.0.0"
+
+jobs:
+  install-pnpm:
+    name: Fake job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Dependencies
+        run: pnpm install
+  
+
+# this is just a POC, not going to fully build it out.  This workflow will pull the tag from artifactory
+# tag it as staging, push to staging ECR, then deploy a new task definition to the staging ecs cluster.  
+# Once that is done the workflow will ask for manual approval to prod.  After approval the workflow will pull
+# the image from artifactory, tag it as prod, push to prod ECR, then deploy a new prod task definition.

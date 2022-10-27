@@ -1,11 +1,11 @@
-name: Release
+name: Release and Deploy
 
 on:
   workflow_dispatch:
 
 jobs:
-  dry-run:
-    name: Release Dry Run
+  release:
+    name: Create Release
     runs-on: ubuntu-latest
     if: $${{ github.ref_type == 'branch' && github.ref_name == 'main'}}
     steps:
@@ -22,5 +22,28 @@ jobs:
 
       - name: Semantic Release
         env:
-          GITHUB_TOKEN: ${{ secrets.GENERATED_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: pnpm run release
+
+      - name: Capture Release Tag
+        id: release-tag
+        run: |
+          git_tag=v$(cat package.json | jq -r .version)
+          container_version=$(cat package.json | jq -r .version)
+          echo "::notice title=Version::$git_tag"
+          echo "git-tag=$git_tag" >> $GITHUB_OUTPUT
+          echo "container-version=$container_version" >> $GITHUB_OUTPUT
+
+  build:
+    name: Create Build artifactory
+    needs: [release]
+    uses: ./.github/workflows/callable-fake-build.yml
+    with:
+      git-tag: ${{ needs.release.outputs.git-tag }}
+
+  deploy:
+    name: Deploy to Staging and Prod
+    needs: [build]
+    uses: ./.github/workflows/callable-deploy-prod.yml
+    with:
+      git-tag: ${{ needs.release.outputs.git-tag }}

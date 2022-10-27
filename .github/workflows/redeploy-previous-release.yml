@@ -3,18 +3,14 @@ name: Re-deploy past release
 on:
   workflow_dispatch:
     inputs:
-      tag:
+      git-tag:
         description: 'tag to deploy'
         type: string
         required: true
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          ref: ${{ inputs.tag }}
-
-# This is just a POC.  This workflow will checkout the tag from artifactory
-# push the image to staging, wait for approval to prod, then deploy to prod
+    name: Deploy to Staging and Prod
+    uses: ./.github/workflows/callable-deploy-prod.yml
+    with:
+      git-tag: ${{ inputs.git-tag }}
