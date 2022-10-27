@@ -2,7 +2,7 @@ name: Deploy
 
 on: 
   release:
-    types: [released]
+    types: [created]
 
 jobs:
   deploy_release:
