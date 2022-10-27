@@ -16,6 +16,6 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
         with:
-          ref: refs/tags/${{ inputs.git-tag }}
+          ref: ${{ inputs.git-tag }}
 
 # just a POC.  If built out, this would build and push an image to artifactory w/ version tag
