@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          repository: ${{ inputs.tag }}
+          ref: ${{ inputs.tag }}
 
 # This is just a POC.  This workflow will checkout the tag from artifactory
 # push the image to staging, wait for approval to prod, then deploy to prod
