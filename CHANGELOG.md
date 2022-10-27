@@ -1,3 +1,5 @@
+# [3.0.0](https://github.com/TimA-GT/semantic_release/compare/v2.0.0...v3.0.0) (2022-10-27)
+
 # [2.0.0](https://github.com/TimA-GT/semantic_release/compare/v1.1.2...v2.0.0) (2022-10-26)
 
 
