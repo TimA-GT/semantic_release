@@ -1,3 +1,10 @@
+# [3.3.0](https://github.com/TimA-GT/semantic_release/compare/v3.2.0...v3.3.0) (2022-10-28)
+
+
+### Features
+
+* [APPS-1234] New feat XYZ ([#7](https://github.com/TimA-GT/semantic_release/issues/7)) ([c4ac99c](https://github.com/TimA-GT/semantic_release/commit/c4ac99c4b8b4967120d30f2846d75199c5d42766))
+
 # [3.2.0](https://github.com/TimA-GT/semantic_release/compare/v3.1.2...v3.2.0) (2022-10-28)
 
 
