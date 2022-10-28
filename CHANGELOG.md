@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/TimA-GT/semantic_release/compare/v3.3.0...v4.0.0) (2022-10-28)
+
+
+### Performance Improvements
+
+* [NO-TICKET] New feat pencil ([#8](https://github.com/TimA-GT/semantic_release/issues/8)) ([e0bba11](https://github.com/TimA-GT/semantic_release/commit/e0bba114e5a8d7fe58b48204753689766dc2dda4))
+
+
+### BREAKING CHANGES
+
+* bump to 4?
+
 # [3.3.0](https://github.com/TimA-GT/semantic_release/compare/v3.2.0...v3.3.0) (2022-10-28)
 
 
